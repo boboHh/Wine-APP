@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/result_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/test1"
+        android:layout_marginTop="8dp"
+        />
+
+<TextView
+    android:id="@+id/result_wine_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/result_image"
+    android:text="Pebble Beach"
+    android:textAppearance="?android:textAppearanceMedium"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:textColor="#dbdbdb"/>
+
+<TextView
+    android:id="@+id/result_wine_year"
+    android:layout_toRightOf="@+id/result_image"
+    android:layout_below="@+id/result_wine_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="California"
+    android:textAppearance="?android:textAppearanceSmall"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:textColor="#757575"/>
+
+<TextView
+    android:id="@+id/result_wine_place"
+    android:layout_toRightOf="@+id/result_image"
+    android:layout_below="@+id/result_wine_year"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="10 miles away"
+    android:textAppearance="?android:textAppearanceSmall"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:textColor="#757575"/>
+
+    <TextView
+        android:id="@+id/result_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/result_image"
+        android:layout_below="@+id/result_wine_year"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="16dp"
+        android:text="TextView"
+        android:textColor="#757575"/>
+
+</RelativeLayout>
